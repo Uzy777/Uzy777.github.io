@@ -4,7 +4,19 @@ particlesJS("particles-js", {
     color: { value: "#ffffff" },
     shape: { type: "circle" },
     opacity: { value: 0.5, random: false },
-    size: { value: 3, random: true },
-    move: { enable: true, speed: 2, direction: "none" },
+    size: { value: 5, random: true },
+    move: { enable: true, speed: 6, direction: "none" },
   },
+  interactivity: {
+    detect_on: "window", 
+    events: {
+      onhover: { enable: true, mode: "repulse" }, // Particles should move away from cursor
+      onclick: { enable: true, mode: "push" }, // Clicking adds new particles
+    },
+    modes: {
+      repulse: { distance: 200, duration: 0.4 },
+      push: { particles_nb: 4 },
+    },
+  },
+  retina_detect: true,
 });

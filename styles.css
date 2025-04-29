@@ -14,6 +14,7 @@ body {
   align-items: center;
   height: 100vh;
   overflow: hidden;
+  flex-direction: column;
 }
 
 #particles-js {
@@ -24,6 +25,8 @@ body {
 }
 
 .content {
-  font-size: 48px;
+  font-size: 64px;
   font-weight: bold;
+  position: relative;
+  z-index: 1;
 }
