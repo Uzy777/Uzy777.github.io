@@ -11,7 +11,7 @@ const projects = [
 
 const Projects = () => {
     return (
-        <section className="bg-black py-24 text-white">
+        <section className="py-24 bg-neutral-100 text-neutral-900 dark:bg-black dark:text-neutral-100 transition-colors">
             <div className="max-w-5xl mx-auto px-6 space-y-12">
                 <h2 className="text-3xl font-semibold text-center">Projects</h2>
 
