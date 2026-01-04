@@ -20,12 +20,12 @@ export default function ParticlesBackground() {
         function initParticles() {
             window.particlesJS("particles-js", {
                 particles: {
-                    number: { value: 80, density: { enable: true, value_area: 800 } },
+                    number: { value: 70, density: { enable: true, value_area: 800 } },
                     color: { value: "#ffffff" },
                     shape: { type: "circle" },
                     opacity: { value: 0.5 },
                     size: { value: 5, random: true },
-                    move: { enable: true, speed: 1.5 },
+                    move: { enable: true, speed: 1.2 },
                 },
                 interactivity: {
                     detect_on: "window",
