@@ -1,8 +1,13 @@
+import ParticlesBackground from "./components/ParticlesBackground";
+
 export default function App() {
-  return (
-    <div style={{ padding: 24, fontFamily: "system-ui" }}>
-      <h1>Hello World!</h1>
-      <p>This is React running on GitHub Pages.</p>
-    </div>
-  )
+    return (
+        <div className="relative min-h-screen bg-black text-white flex flex-col items-center justify-center overflow-hidden">
+            <ParticlesBackground />
+
+            <h1 className="text-6xl font-bold mb-4 z-10">WIP (Work In Progress)</h1>
+
+            <p className="text-lg z-10 opacity-80">Want a cookie?</p>
+        </div>
+    );
 }
