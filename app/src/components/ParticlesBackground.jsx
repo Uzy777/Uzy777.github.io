@@ -31,7 +31,7 @@ export default function ParticlesBackground() {
                     detect_on: "window",
                     events: {
                         onhover: { enable: true, mode: "repulse" },
-                        onclick: { enable: true, mode: "push" },
+                        onclick: { enable: false, mode: "push" },
                     },
                     modes: {
                         repulse: { distance: 100, duration: 0.4 },
