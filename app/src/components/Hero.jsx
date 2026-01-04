@@ -2,7 +2,7 @@ import ParticlesBackground from "./ParticlesBackground";
 
 const Hero = () => {
     return (
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black text-white">
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-neutral-950 text-white">
             <ParticlesBackground />
 
             <div className="relative z-10 flex flex-col items-center text-center max-w-4xl px-6">

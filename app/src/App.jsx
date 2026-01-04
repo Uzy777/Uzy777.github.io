@@ -10,7 +10,7 @@ export default function App() {
 
     return (
         <div className={theme === "dark" ? "dark" : ""}>
-            <div className="bg-white text-black dark:bg-black dark:text-white transition-colors duration-300">
+            <div className="bg-neutral-100 text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100 transition-colors">
                 <ThemeToggle theme={theme} setTheme={setTheme} />
                 <Hero />
                 <About />
