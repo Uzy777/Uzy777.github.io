@@ -7,7 +7,25 @@ const projects = [
         tech: ["React", "REST API", "Leaflet", "Data Filtering"],
         link: "https://github.com/Uzy777/Mini-Projects/tree/main/React/country-explorer",
     },
-    
+    {
+        title: "Python API Development - Course 🌐",
+        description:
+            "Built a robust API using FastAPI, covering essential concepts like routing, schema validation, and database integration. The project also includes automated testing with pytest and a CI/CD pipeline set up through GitHub Actions for seamless deployment.",
+        tech: ["Python", "FastAPI", "Docker", "SQL", "Pytest", "CI/CD Pipelines"],
+        link: "https://github.com/Uzy777/Python-API-Development",
+    },
+    {
+        title: "Harvard University CS50x - Course 🏫",
+        description: "Introduction to the intellectual enterprises of computer science and the art of programming.",
+        tech: ["C", "Python", "SQL", "HTML", "CSS", "JavaScript", "Flask"],
+        link: "https://github.com/Uzy777/CS50x",
+    },
+    {
+        title: "Python Crash Course - Course 🐍",
+        description: "Followed the Python Crash Course [Third Edition] Book by Eric Matthes.",
+        tech: ["Python"],
+        link: "https://github.com/Uzy777/Python-Crash-Course",
+    },
 ];
 
 const Projects = () => {
