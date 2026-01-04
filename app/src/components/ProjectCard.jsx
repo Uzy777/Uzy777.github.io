@@ -1,6 +1,6 @@
 const ProjectCard = ({ title, description, tech, link }) => {
     return (
-        <div className="bg-white text-neutral-900 dark:bg-neutral-800 dark:text-neutral-100 border border-black/10 dark:border-white/10 rounded-lg p-6 space-y-4 transition-colors">
+        <div className="bg-white text-neutral-900 dark:bg-neutral-800 dark:text-neutral-100 border border-black/10 dark:border-white/10 rounded-lg p-6 space-y-4 transition-all duration-200 hover:-translate-y-0.5 cursor-pointer">
             <h3 className="text-xl font-semibold">{title}</h3>
 
             <p className="text-sm opacity-80 leading-relaxed">{description}</p>

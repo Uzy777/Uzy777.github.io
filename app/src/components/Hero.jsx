@@ -16,7 +16,15 @@ const Hero = () => {
             <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-black" />
 
             <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
-                <span className="text-2xl opacity-70">↓</span>
+                <button
+                    onClick={() => {
+                        document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
+                    }}
+                >
+                    <span className="text-2xl opacity-70 hover:opacity-100 transition-opacity" aria-label="Scroll to About section">
+                        ↓
+                    </span>
+                </button>
             </div>
         </section>
     );
