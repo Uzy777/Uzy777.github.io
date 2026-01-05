@@ -9,6 +9,8 @@ const projects = [
         tech: ["React", "REST API", "Leaflet", "Data Filtering"],
         type: "project",
         link: "https://github.com/Uzy777/Mini-Projects/tree/main/React/country-explorer",
+        lastUpdated: "December 18 2025",
+        status: "Completed",
     },
     {
         title: "Full Stack Open 🎓",
