@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import ProjectCard from "./ProjectCard";
 
@@ -51,10 +51,18 @@ const projects = [
 ];
 
 const Projects = () => {
-    const [filter, setFilter] = useState("all");
+    const [filter, setFilter] = useState(() => {
+        return localStorage.getItem("projectsFilter") || "all";
+    });
     const [visibleCount, setVisibleCount] = useState(4);
 
     const filteredProjects = filter === "all" ? projects : projects.filter((project) => project.type === filter);
+
+    const visibleProjectsCount = Math.min(visibleCount, filteredProjects.length);
+
+    useEffect(() => {
+        localStorage.setItem("projectsFilter", filter);
+    }, [filter]);
 
     return (
         <section className="py-24 bg-neutral-200 text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100 transition-colors">
@@ -82,14 +90,26 @@ const Projects = () => {
                     ))}
                 </div>
 
+                <p className="text-center text-sm opacity-70">
+                    Showing {visibleProjectsCount} of {filteredProjects.length} projects
+                </p>
+
                 {filteredProjects.length === 0 && <p className="text-center opacity-70">No projects found for this filter.</p>}
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {filteredProjects.map((project) => (
+                    {filteredProjects.slice(0, visibleCount).map((project) => (
                         <ProjectCard key={project.title} {...project} />
                     ))}
                 </div>
             </div>
+
+            {visibleCount < filteredProjects.length && (
+                <div className="text-center mt-8">
+                    <button className="text-sm underline opacity-70 hover:opacity-100 transition" onClick={() => setVisibleCount((prev) => prev + 4)}>
+                        Show more
+                    </button>
+                </div>
+            )}
         </section>
     );
 };
