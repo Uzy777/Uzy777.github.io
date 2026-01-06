@@ -27,7 +27,7 @@ const projects = [
         tech: ["React"],
         type: "project",
         link: "https://github.com/Uzy777/Mini-Projects/tree/main/React/pig-dice-game",
-        // lastUpdated: "September 24 2025",
+        lastUpdated: "September 24 2025",
         status: "In Progress",
     },
     {
@@ -37,6 +37,8 @@ const projects = [
         tech: ["React", "Rest APIs", "Node.js", "GraphQL", "TypeScript", "CI/CD", "Containers", "Relational Databases"],
         type: "course",
         link: "https://github.com/Uzy777/FullStackOpen",
+        lastUpdated: "January 06 2026",
+        status: "In Progress",
     },
     {
         title: "FreeCodeCamp - Certified Full Stack Developer 🤖",
@@ -45,7 +47,10 @@ const projects = [
         tech: ["HTML", "CSS", "JavaScript", "React", "TypeScript", "Python", "Relational Database", "APIs"],
         type: "course",
         link: "https://github.com/Uzy777/freeCodeCamp-Projects/tree/main/Certified%20Full%20Stack%20Developer%20Curriculum",
+        lastUpdated: "xxx",
+        status: "In Progress",
     },
+
     {
         title: "Python API Development 🌐",
         description:
@@ -53,13 +58,18 @@ const projects = [
         tech: ["Python", "FastAPI", "Docker", "SQL", "Pytest", "CI/CD Pipelines"],
         type: "course",
         link: "https://github.com/Uzy777/Python-API-Development",
+        lastUpdated: "August 21 2024",
+        status: "Completed",
     },
+
     {
         title: "Harvard University CS50x 🏫",
         description: "Introduction to the intellectual enterprises of computer science and the art of programming.",
         tech: ["C", "Python", "SQL", "HTML", "CSS", "JavaScript", "Flask"],
         type: "course",
         link: "https://github.com/Uzy777/CS50x",
+        lastUpdated: "November 28 2024",
+        status: "Completed",
     },
     {
         title: "Python Crash Course 🐍",
@@ -67,6 +77,8 @@ const projects = [
         tech: ["Python"],
         type: "course",
         link: "https://github.com/Uzy777/Python-Crash-Course",
+        lastUpdated: "October 16 2024",
+        status: "Completed",
     },
 ];
 
