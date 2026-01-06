@@ -13,6 +13,24 @@ const projects = [
         status: "Completed",
     },
     {
+        title: "Wallhaven Scraper 🖼️",
+        description: "Get a list of wallpapers downloaded.",
+        tech: ["Python", "External API"],
+        type: "project",
+        link: "https://github.com/Uzy777/Mini-Projects/tree/main/Scripts/wallhaven-scraper",
+        lastUpdated: "September 24 2025",
+        status: "Completed",
+    },
+    {
+        title: "Pig Dice Game 🐷",
+        description: "A turn-based dice game where rolling a 1 wipes your turn’s score.",
+        tech: ["React"],
+        type: "project",
+        link: "https://github.com/Uzy777/Mini-Projects/tree/main/React/pig-dice-game",
+        // lastUpdated: "September 24 2025",
+        status: "In Progress",
+    },
+    {
         title: "Full Stack Open 🎓",
         description:
             "An introduction to modern web application development with JavaScript. The main focus is on building single page applications with ReactJS that use REST APIs built with Node.js. The course also contains a section on GraphQL, a modern alternative to REST APIs.",
@@ -53,13 +71,10 @@ const projects = [
 ];
 
 const Projects = () => {
-    const [filter, setFilter] = useState(() => {
-        return localStorage.getItem("projectsFilter") || "all";
-    });
+    const [filter, setFilter] = useState(() => localStorage.getItem("projectsFilter") || "all");
     const [visibleCount, setVisibleCount] = useState(4);
 
-    const filteredProjects = filter === "all" ? projects : projects.filter((project) => project.type === filter);
-
+    const filteredProjects = filter === "all" ? projects : projects.filter((p) => p.type === filter);
     const visibleProjectsCount = Math.min(visibleCount, filteredProjects.length);
 
     useEffect(() => {
@@ -67,27 +82,23 @@ const Projects = () => {
     }, [filter]);
 
     return (
-        <section className="py-24 bg-neutral-200 text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100 transition-colors">
+        <section className="py-24 bg-white text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100 transition-colors">
             <div className="max-w-5xl mx-auto px-6 space-y-12">
                 <h2 className="text-3xl font-semibold text-center">Projects</h2>
 
                 <div className="flex justify-center gap-4 text-sm">
-                    {[
-                        { label: "All", value: "all" },
-                        { label: "Mini Projects", value: "project" },
-                        { label: "Courses", value: "course" },
-                    ].map((item) => (
+                    {["all", "project", "course"].map((v) => (
                         <button
-                            key={item.value}
+                            key={v}
                             onClick={() => {
-                                setFilter(item.value);
+                                setFilter(v);
                                 setVisibleCount(4);
                             }}
-                            className={`px-3 py-1 rounded border border-black/10 dark:border-white/10 transition ${
-                                filter === item.value ? "bg-black text-white dark:bg-white dark:text-black" : "opacity-70 hover:opacity-100"
+                            className={`px-3 py-1 rounded border transition ${
+                                filter === v ? "bg-black text-white dark:bg-white dark:text-black" : "opacity-70 hover:opacity-100"
                             }`}
                         >
-                            {item.label}
+                            {v === "all" ? "All" : v === "project" ? "Mini Projects" : "Courses"}
                         </button>
                     ))}
                 </div>
@@ -96,22 +107,20 @@ const Projects = () => {
                     Showing {visibleProjectsCount} of {filteredProjects.length} projects
                 </p>
 
-                {filteredProjects.length === 0 && <p className="text-center opacity-70">No projects found for this filter.</p>}
-
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {filteredProjects.slice(0, visibleCount).map((project) => (
-                        <ProjectCard key={project.title} {...project} />
+                    {filteredProjects.slice(0, visibleCount).map((p) => (
+                        <ProjectCard key={p.title} {...p} />
                     ))}
                 </div>
-            </div>
 
-            {visibleCount < filteredProjects.length && (
-                <div className="text-center mt-8">
-                    <button className="text-sm underline opacity-70 hover:opacity-100 transition" onClick={() => setVisibleCount((prev) => prev + 4)}>
-                        Show more
-                    </button>
-                </div>
-            )}
+                {visibleCount < filteredProjects.length && (
+                    <div className="text-center">
+                        <button onClick={() => setVisibleCount((v) => v + 4)} className="text-sm underline opacity-70 hover:opacity-100">
+                            Show more
+                        </button>
+                    </div>
+                )}
+            </div>
         </section>
     );
 };

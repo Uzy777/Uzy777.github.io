@@ -1,15 +1,13 @@
 import { useState, useEffect } from "react";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
-import ThemeToggle from "./components/ThemeToggle.jsx";
+import ThemeToggle from "./components/ThemeToggle";
 
 export default function App() {
-    const [theme, setTheme] = useState(() => {
-        const savedTheme = localStorage.getItem("theme");
-        return savedTheme ? savedTheme : "dark";
-    });
+    const [theme, setTheme] = useState(() => localStorage.getItem("theme") || "dark");
 
     useEffect(() => {
         localStorage.setItem("theme", theme);
@@ -21,6 +19,7 @@ export default function App() {
                 <ThemeToggle theme={theme} setTheme={setTheme} />
                 <Hero />
                 <About />
+                <Experience />
                 <Projects />
                 <Footer />
             </div>
