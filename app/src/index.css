@@ -1,6 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+details {
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    margin: 1.5rem 0;
+    background: rgb(0 0 0 / 0.02);
+}
+
+.dark details {
+    border-color: rgb(255 255 255 / 0.15);
+    background: rgb(255 255 255 / 0.03);
+}
+
+summary {
+    cursor: pointer;
+    font-weight: 600;
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::after {
+    content: "▸";
+    float: right;
+    transition: transform 0.2s ease;
+}
+
+details[open] summary::after {
+    transform: rotate(90deg);
+}
+
 /* 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;

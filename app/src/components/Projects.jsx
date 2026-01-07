@@ -5,12 +5,14 @@ import ProjectCard from "./ProjectCard";
 const projects = [
     {
         title: "Country Explorer 🌍",
+        slug: "country-explorer",
         description: "Browse countries using an external API with filters, dynamic views and leaflet maps integration.",
         tech: ["React", "REST API", "Leaflet", "Data Filtering"],
         type: "project",
         link: "https://github.com/Uzy777/Mini-Projects/tree/main/React/country-explorer",
         lastUpdated: "December 18 2025",
         status: "Completed",
+        hasDetails: true,
     },
     {
         title: "Wallhaven Scraper 🖼️",
@@ -20,6 +22,7 @@ const projects = [
         link: "https://github.com/Uzy777/Mini-Projects/tree/main/Scripts/wallhaven-scraper",
         lastUpdated: "September 24 2025",
         status: "Completed",
+        hasDetails: false,
     },
     {
         title: "Pig Dice Game 🐷",
@@ -94,7 +97,7 @@ const Projects = () => {
     }, [filter]);
 
     return (
-        <section className="py-24 bg-white text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100 transition-colors">
+        <section id="projects" className="py-24 bg-white text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100 transition-colors">
             <div className="max-w-5xl mx-auto px-6 space-y-12">
                 <h2 className="text-3xl font-semibold text-center">Projects</h2>
 

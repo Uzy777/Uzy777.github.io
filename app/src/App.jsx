@@ -5,6 +5,9 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import ThemeToggle from "./components/ThemeToggle";
+import ProjectPage from "./components/ProjectPage";
+
+import { Routes, Route } from "react-router-dom";
 
 export default function App() {
     const [theme, setTheme] = useState(() => localStorage.getItem("theme") || "dark");
@@ -17,11 +20,23 @@ export default function App() {
         <div className={theme === "dark" ? "dark" : ""}>
             <div className="bg-neutral-100 text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100 transition-colors">
                 <ThemeToggle theme={theme} setTheme={setTheme} />
-                <Hero />
-                <About />
-                <Experience />
-                <Projects />
-                <Footer />
+
+                <Routes>
+                    <Route
+                        path="/"
+                        element={
+                            <>
+                                <Hero />
+                                <About />
+                                <Experience />
+                                <Projects />
+                                <Footer />
+                            </>
+                        }
+                    />
+
+                    <Route path="/projects/:slug" element={<ProjectPage />} />
+                </Routes>
             </div>
         </div>
     );
