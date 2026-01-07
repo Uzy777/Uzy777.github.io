@@ -20,6 +20,7 @@ find . -mindepth 1 -maxdepth 1 \
   ! -name '.git' \
   ! -name 'app' \
   ! -name 'deploy.sh' \
+  ! -name 'CNAME' \
   -exec rm -rf {} +
 
 echo "📦 Copying new build to root..."
