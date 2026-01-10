@@ -74,10 +74,55 @@ export const notes = {
             },
         ],
     },
-        bash: {
+    bash: {
         title: "Bash",
         icon: "devicon-bash-plain colored",
-        description: "Notes and explanations from learning Tailwindcss.",
+        description: "Notes and explanations from learning Bash.",
+        items: [
+            {
+                slug: "",
+                title: " ",
+            },
+            {
+                slug: "",
+                title: " ",
+            },
+        ],
+    },
+    git: {
+        title: "Git",
+        icon: "devicon-git-plain colored",
+        description: "Notes and explanations from learning Git.",
+        items: [
+            {
+                slug: "",
+                title: " ",
+            },
+            {
+                slug: "",
+                title: " ",
+            },
+        ],
+    },
+    html: {
+        title: "HTML",
+        icon: "devicon-html5-plain colored",
+        description: "Notes and explanations from learning HTML.",
+        items: [
+            {
+                slug: "",
+                title: " ",
+            },
+            {
+                slug: "",
+                title: " ",
+            },
+        ],
+    },
+    css: {
+        title: "CSS",
+        icon: "devicon-css3-plain colored",
+        description: "Notes and explanations from learning CSS.",
         items: [
             {
                 slug: "",
