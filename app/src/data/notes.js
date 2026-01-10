@@ -29,4 +29,64 @@ export const notes = {
             },
         ],
     },
+    javascript: {
+        title: "JavaScript",
+        icon: "devicon-javascript-plain colored",
+        description: "Notes and explanations from learning JavaScript.",
+        items: [
+            {
+                slug: "",
+                title: " ",
+            },
+            {
+                slug: "",
+                title: " ",
+            },
+        ],
+    },
+    vite: {
+        title: "Vite",
+        icon: "devicon-vitejs-plain colored",
+        description: "Notes and explanations from learning Vite.",
+        items: [
+            {
+                slug: "",
+                title: " ",
+            },
+            {
+                slug: "",
+                title: " ",
+            },
+        ],
+    },
+    tailwindcss: {
+        title: "Vite",
+        icon: "devicon-tailwindcss-original colored",
+        description: "Notes and explanations from learning Tailwindcss.",
+        items: [
+            {
+                slug: "",
+                title: " ",
+            },
+            {
+                slug: "",
+                title: " ",
+            },
+        ],
+    },
+        bash: {
+        title: "Bash",
+        icon: "devicon-bash-plain colored",
+        description: "Notes and explanations from learning Tailwindcss.",
+        items: [
+            {
+                slug: "",
+                title: " ",
+            },
+            {
+                slug: "",
+                title: " ",
+            },
+        ],
+    },
 };
