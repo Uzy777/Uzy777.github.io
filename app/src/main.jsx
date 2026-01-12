@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App.jsx";
 
-import ScrollToHash from "./components/ScrollToHash.jsx";
+import ScrollToHash from "./components/layout/ScrollToHash.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>

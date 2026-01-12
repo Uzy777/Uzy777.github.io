@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Experience from "./components/Experience";
-import Projects from "./components/Projects";
-import Footer from "./components/Footer";
-import ThemeToggle from "./components/ThemeToggle";
-import ProjectPage from "./components/ProjectPage";
+import Hero from "./components/layout/Hero";
+import About from "./components/sections/About";
+import Experience from "./components/sections/Experience";
+import Projects from "./components/projects/Projects";
+import Footer from "./components/layout/Footer";
+import ThemeToggle from "./components/layout/ThemeToggle";
+import ProjectPage from "./pages/ProjectPage";
 
-import NotesSection from "./components/NotesSection";
+import NotesSection from "./components/notes/NotesSection";
 
 import { Routes, Route } from "react-router-dom";
 

@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import MarkdownRenderer from "../components/MarkdownRenderer";
+import MarkdownRenderer from "../components/common/MarkdownRenderer";
 
 const NotePage = () => {
     const { topic, slug } = useParams();
