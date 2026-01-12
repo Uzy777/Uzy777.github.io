@@ -134,4 +134,19 @@ export const notes = {
             },
         ],
     },
+    aws: {
+        title: "AWS",
+        icon: "devicon-amazonwebservices-plain-wordmark colored",
+        description: "Notes and explanations from learning AWS.",
+        items: [
+            {
+                slug: "",
+                title: " ",
+            },
+            {
+                slug: "",
+                title: " ",
+            },
+        ],
+    },
 };
