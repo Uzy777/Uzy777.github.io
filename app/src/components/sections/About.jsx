@@ -20,6 +20,17 @@ const About = () => {
                         </p>
 
                         <p className="leading-relaxed">Outside of coding, I enjoy cars, driving, and ricing my Arch + Hyprland environment.</p>
+                        <div className="pt-6 space-y-3">
+                            <p className="text-sm font-medium opacity-70">Daily environment & tools</p>
+
+                            <div className="flex flex-wrap gap-4">
+                                <img src="/devicons/archlinux-original.svg" alt="Arch Linux" className="w-7 h-7" title="Arch" />
+                                <img src="/devicons/ubuntu-original.svg" alt="Ubuntu" className="w-7 h-7" title="Ubuntu" />
+                                {/* <img src="/devicons/debian-original.svg" alt="Debian" className="w-7 h-7" title="Debian" /> */}
+                                <img src="/devicons/vscodium-original.svg" alt="VSCodium" className="w-7 h-7" title="VSCodium" />
+                                <img src="/devicons/jira-original.svg" alt="Jira" className="w-7 h-7" title="Jira" />
+                            </div>
+                        </div>
 
                         <div className="pt-4 flex flex-wrap gap-4 text-sm">
                             <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-200 dark:bg-neutral-800 opacity-80">
