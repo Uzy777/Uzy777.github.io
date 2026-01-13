@@ -14,8 +14,6 @@ const Hero = () => {
 
                 <h2 className="text-2xl font-medium mb-4 opacity-80">Junior Software Engineer</h2>
 
-                {/* <p className="text-base opacity-70">I build things with ...</p> */}
-
                 <div className="relative h-10 flex items-center justify-center" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
                     {/* Text */}
                     <p className={`transition-opacity duration-300 ${hovered ? "opacity-0" : "opacity-70"}`}>I build things with …</p>
