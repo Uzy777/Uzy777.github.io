@@ -140,8 +140,8 @@ export const notes = {
         description: "Notes and explanations from learning AWS.",
         items: [
             {
-                slug: "",
-                title: " ",
+                slug: "aws-cloud-practitioner-basics-course",
+                title: "AWS Cloud Practitioner Basics - Course",
             },
             {
                 slug: "",
