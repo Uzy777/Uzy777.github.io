@@ -12,13 +12,14 @@ export const projects = [
     },
     {
         title: "Wallhaven Scraper 🖼️",
+        slug: "wallhaven-scraper",
         description: "Get a list of wallpapers downloaded.",
         tech: ["Python", "External API"],
         type: "project",
         link: "https://github.com/Uzy777/Mini-Projects/tree/main/Scripts/wallhaven-scraper",
         lastUpdated: "September 24 2025",
         status: "Completed",
-        hasDetails: false,
+        hasDetails: true,
     },
     {
         title: "Pig Dice Game 🐷",
