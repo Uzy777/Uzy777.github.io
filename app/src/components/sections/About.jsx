@@ -6,7 +6,9 @@ const About = () => {
 
                 <div className="grid gap-12 md:grid-cols-2 items-center">
                     <div className="flex justify-center">
-                        <div className="relative w-48 h-48 rounded-full bg-neutral-200 dark:bg-neutral-800 overflow-hidden flex items-center justify-center"></div>
+                        <div className="relative w-48 h-64 rounded-full bg-neutral-200 dark:bg-neutral-800 overflow-hidden flex items-center justify-center">
+                            <img src="/Untitled.png"></img>
+                        </div>
                     </div>
 
                     <div className="space-y-6 text-neutral-700 dark:text-neutral-300">
