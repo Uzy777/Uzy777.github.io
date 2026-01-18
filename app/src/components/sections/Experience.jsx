@@ -7,7 +7,8 @@ const Experience = () => {
                 <div className="space-y-16 border-l-2 border-black/20 dark:border-white/20 pl-10">
                     <div className="relative flex gap-6">
                         <img
-                            src="https://media.licdn.com/dms/image/v2/C560BAQFdkIv19-6MJA/company-logo_200_200/company-logo_200_200/0/1631385264962?e=2147483647&v=beta&t=-mCLQp7NWYTO4ew33H1SVquK5dzQMfKjaVLtj7-IoQM"
+                            src="/content/experience/tokio-marine-hcc.jpeg"
+                            // src="https://media.licdn.com/dms/image/v2/C560BAQFdkIv19-6MJA/company-logo_200_200/company-logo_200_200/0/1631385264962?e=2147483647&v=beta&t=-mCLQp7NWYTO4ew33H1SVquK5dzQMfKjaVLtj7-IoQM"
                             alt="Tokio Marine logo"
                             className="w-12 h-12 object-contain rounded bg-white dark:bg-neutral-900 p-1"
                         />
@@ -32,7 +33,7 @@ const Experience = () => {
 
                     <div className="relative flex gap-6">
                         <img
-                            src="https://media.licdn.com/dms/image/v2/C560BAQFmuLSyL1nlPA/company-logo_200_200/company-logo_200_200/0/1678231359043/github_logo?e=2147483647&v=beta&t=2RO1zjla4T-YiOqKS50e4sc9n8RAgnUqGqu0mcZp5fU"
+                            src="/content/experience/github.jpeg"
                             alt="GitHub logo"
                             className="w-12 h-12 object-contain rounded bg-white dark:bg-neutral-900 p-1"
                         />
@@ -60,7 +61,7 @@ const Experience = () => {
 
                     <div className="relative flex gap-6">
                         <img
-                            src="https://media.licdn.com/dms/image/v2/C560BAQEPvHWEgvqmQA/company-logo_200_200/company-logo_200_200/0/1630647206230/voquis_logo?e=2147483647&v=beta&t=-0CbNuf0K_qhMol03uO-m8pb8CyfdtlJgAh27Lwoe_Y"
+                            src="/content/experience/voquis.jpeg"
                             alt="Voquis logo"
                             className="w-12 h-12 object-contain rounded bg-white dark:bg-neutral-900 p-1"
                         />
