@@ -11,16 +11,15 @@ const About = () => {
                         </div>
                     </div>
 
-                    <div className="space-y-6 text-neutral-700 dark:text-neutral-300">
+                    <div className="space-y-6 text-neutral-700 dark:text-neutral-300 bg-neutral-100 dark:bg-neutral-800/40 rounded-lg p-6">
+                        {" "}
                         <p className="leading-relaxed">
                             I'm a junior software developer focused on learning and building modern web applications, with a growing interest in full-stack
                             development.
                         </p>
-
                         <p className="leading-relaxed">
                             I enjoy learning through hands-on projects and courses, mainly working with React while exploring Python and related frameworks.
                         </p>
-
                         <p className="leading-relaxed">Outside of coding, I enjoy cars, driving, and ricing my Arch + Hyprland environment.</p>
                         <div className="pt-6 space-y-3">
                             <p className="text-sm font-medium opacity-70">Daily environment & tools</p>
@@ -33,7 +32,6 @@ const About = () => {
                                 <img src="/devicons/jira-original.svg" alt="Jira" className="w-7 h-7" title="Jira" />
                             </div>
                         </div>
-
                         <div className="pt-4 flex flex-wrap gap-4 text-sm">
                             <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-200 dark:bg-neutral-800 opacity-80">
                                 📍 Cardiff, United Kingdom

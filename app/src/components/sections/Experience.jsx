@@ -5,14 +5,13 @@ const Experience = () => {
                 <h2 className="text-4xl font-semibold text-center tracking-tight">Experience</h2>
 
                 <div className="space-y-16 border-l-2 border-black/20 dark:border-white/20 pl-10">
-                    <div className="relative flex gap-6">
+                    <div className="relative flex gap-6 bg-white/60 dark:bg-neutral-900/60 rounded-xl p-6 hover:bg-white dark:hover:bg-neutral-900 transition">
                         <img
                             src="/content/experience/tokio-marine-hcc.jpeg"
                             // src="https://media.licdn.com/dms/image/v2/C560BAQFdkIv19-6MJA/company-logo_200_200/company-logo_200_200/0/1631385264962?e=2147483647&v=beta&t=-mCLQp7NWYTO4ew33H1SVquK5dzQMfKjaVLtj7-IoQM"
                             alt="Tokio Marine logo"
                             className="w-12 h-12 object-contain rounded bg-white dark:bg-neutral-900 p-1"
                         />
-
                         <div className="space-y-3">
                             <h4 className="text-xl font-medium">Application Developer</h4>
 
@@ -31,13 +30,12 @@ const Experience = () => {
                         </div>
                     </div>
 
-                    <div className="relative flex gap-6">
+                    <div className="relative flex gap-6 bg-white/60 dark:bg-neutral-900/60 rounded-xl p-6 hover:bg-white dark:hover:bg-neutral-900 transition">
                         <img
                             src="/content/experience/github.jpeg"
                             alt="GitHub logo"
                             className="w-12 h-12 object-contain rounded bg-white dark:bg-neutral-900 p-1"
                         />
-
                         <div className="space-y-3">
                             <h4 className="text-xl font-medium">Programming Learning & Projects</h4>
 
@@ -59,13 +57,12 @@ const Experience = () => {
                         </div>
                     </div>
 
-                    <div className="relative flex gap-6">
+                    <div className="relative flex gap-6 bg-white/60 dark:bg-neutral-900/60 rounded-xl p-6 hover:bg-white dark:hover:bg-neutral-900 transition">
                         <img
                             src="/content/experience/voquis.jpeg"
                             alt="Voquis logo"
                             className="w-12 h-12 object-contain rounded bg-white dark:bg-neutral-900 p-1"
                         />
-
                         <div className="space-y-3">
                             <h4 className="text-xl font-medium">Junior Software Engineer</h4>
 
