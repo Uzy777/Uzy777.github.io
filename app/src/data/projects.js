@@ -31,6 +31,15 @@ export const projects = [
         status: "In Progress",
     },
     {
+        title: "The Farmer Was Replaced 🌾",
+        description: "Playing though a coding game which focuses on automation and creating algorithms which are highly efficient using Python",
+        tech: ["Python"],
+        type: "project",
+        link: "https://github.com/Uzy777/The-Farmer-Was-Replaced",
+        lastUpdated: "January 16 2026",
+        status: "In Progress",
+    },
+    {
         title: "Full Stack Open 🎓",
         description:
             "An introduction to modern web application development with JavaScript. The main focus is on building single page applications with ReactJS that use REST APIs built with Node.js. The course also contains a section on GraphQL, a modern alternative to REST APIs.",

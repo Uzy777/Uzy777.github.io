@@ -5,7 +5,7 @@ import { projects } from "../../data/projects";
 
 const Projects = () => {
     const [filter, setFilter] = useState(() => localStorage.getItem("projectsFilter") || "all");
-    const [visibleCount, setVisibleCount] = useState(4);
+    const [visibleCount, setVisibleCount] = useState(6);
 
     const filteredProjects = filter === "all" ? projects : projects.filter((p) => p.type === filter);
     const visibleProjectsCount = Math.min(visibleCount, filteredProjects.length);
@@ -25,7 +25,7 @@ const Projects = () => {
                             key={v}
                             onClick={() => {
                                 setFilter(v);
-                                setVisibleCount(4);
+                                setVisibleCount(6);
                             }}
                             className={`px-3 py-1 rounded border transition ${
                                 filter === v ? "bg-black text-white dark:bg-white dark:text-black" : "opacity-70 hover:opacity-100"
