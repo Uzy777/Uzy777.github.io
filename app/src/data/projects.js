@@ -8,6 +8,7 @@ export const projects = [
         link: "https://github.com/Uzy777/Mini-Projects/tree/main/React/country-explorer",
         lastUpdated: "December 18 2025",
         status: "Completed",
+        previewImages: ["/test/1.png", "/test/1.png", "/test/1.png", "/test/1.png", "/test/1.png"],
         hasDetails: true,
     },
     {
@@ -19,6 +20,7 @@ export const projects = [
         link: "https://github.com/Uzy777/Mini-Projects/tree/main/Scripts/wallhaven-scraper",
         lastUpdated: "September 24 2025",
         status: "Completed",
+        previewImages: [],
         hasDetails: true,
     },
     {
@@ -32,7 +34,7 @@ export const projects = [
     },
     {
         title: "The Farmer Was Replaced 🌾",
-        description: "Playing though a coding game which focuses on automation and creating algorithms which are highly efficient using Python",
+        description: "Playing though a coding game which focuses on automation and creating algorithms which are highly efficient using Python.",
         tech: ["Python"],
         type: "project",
         link: "https://github.com/Uzy777/The-Farmer-Was-Replaced",
