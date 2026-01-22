@@ -8,7 +8,13 @@ export const projects = [
         link: "https://github.com/Uzy777/Mini-Projects/tree/main/React/country-explorer",
         lastUpdated: "December 18 2025",
         status: "Completed",
-        previewImages: ["/test/1.png", "/test/1.png", "/test/1.png", "/test/1.png", "/test/1.png"],
+        previewImages: [
+            "/content/projects/country-explorer/1.png",
+            "/content/projects/country-explorer/2.png",
+            "/content/projects/country-explorer/3.png",
+            "/content/projects/country-explorer/4.png",
+            "/content/projects/country-explorer/5.png",
+        ],
         hasDetails: true,
     },
     {

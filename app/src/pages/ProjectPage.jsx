@@ -7,7 +7,7 @@ const ProjectPage = () => {
     const [content, setContent] = useState("");
 
     useEffect(() => {
-        fetch(`/content/projects/${slug}.md`)
+        fetch(`/content/projects/${slug}/${slug}.md`)
             .then((res) => res.text())
             .then((text) => setContent(text));
     }, [slug]);

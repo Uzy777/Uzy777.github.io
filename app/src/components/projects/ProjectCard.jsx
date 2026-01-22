@@ -83,7 +83,9 @@ const ProjectCard = ({ title, slug, description, tech, link, hasDetails, status,
                 >
                     {previewImages.length > 0 ? (
                         <>
-                            <img src={previewImages[imageIndex]} alt={`${title}`} className="w-full rounded-md object-cover" />
+                            <div className="w-full h-40 overflow-hidden rounded-md ">
+                                <img src={previewImages[imageIndex]} alt={`${title}`} className="w-full h-full object-contain" />
+                            </div>
 
                             <div onClick={(e) => e.stopPropagation()} className="flex items-center justify-between text-sm">
                                 <button
@@ -115,7 +117,7 @@ const ProjectCard = ({ title, slug, description, tech, link, hasDetails, status,
                         <p className="text-sm opacity-70">No preview available</p>
                     )}
 
-                    <p className="text-xs text-center opacity-60">Click anywhere to return</p>
+                    {/* <p className="text-xs text-center opacity-60">Click anywhere to return</p> */}
                 </div>
             </div>
         </div>
