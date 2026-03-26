@@ -7,7 +7,7 @@ const statusStyles = {
     Archived: "text-neutral-600 bg-neutral-100 border-neutral-200 dark:text-neutral-400 dark:bg-neutral-400/10 dark:border-neutral-400/20",
 };
 
-const ProjectCard = ({ title, slug, description, tech, link, hasDetails, status, lastUpdated, previewImages = [] }) => {
+const ProjectCard = ({ title, slug, description, tech, link, hasDetails, status, lastUpdated, isFallback, previewImages = [] }) => {
     const [flipped, setFlipped] = useState(false);
     const [imageIndex, setImageIndex] = useState(0);
 
@@ -46,7 +46,12 @@ const ProjectCard = ({ title, slug, description, tech, link, hasDetails, status,
                     {(status || lastUpdated) && (
                         <div className="flex items-center gap-3 text-xs">
                             {status && <span className={`px-2 py-0.5 rounded-full border ${statusStyles[status] || ""}`}>{status}</span>}
-                            {lastUpdated && <span className="opacity-60">Updated: {lastUpdated}</span>}
+                            {lastUpdated && (
+                                <span className="opacity-60">
+                                    Updated: {lastUpdated}
+                                    {isFallback && <span className="ml-2 text-xs italic text-blue-600 dark:text-blue-400">(stale)</span>}
+                                </span>
+                            )}
                         </div>
                     )}
 

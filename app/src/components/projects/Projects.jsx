@@ -45,16 +45,20 @@ const Projects = () => {
                     if (!project.repo) {
                         return project;
                     }
-
                     try {
                         const commitDate = await getLastCommitDate(project.repo, project.path);
 
                         return {
                             ...project,
                             lastUpdated: formatCommitDate(commitDate),
+                            isFallback: false,
                         };
                     } catch (error) {
-                        return project;
+                        return {
+                            ...project,
+                            lastUpdated: project.lastUpdated,
+                            isFallback: true,
+                        };
                     }
                 }),
             );
