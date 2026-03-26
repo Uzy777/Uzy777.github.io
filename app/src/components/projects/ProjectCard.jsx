@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const statusStyles = {
     Completed: "text-emerald-700 bg-emerald-50 border-emerald-200 dark:text-emerald-400 dark:bg-emerald-400/10 dark:border-emerald-400/20",
     "In Progress": "text-amber-700 bg-amber-50 border-amber-200 dark:text-amber-400 dark:bg-amber-400/10 dark:border-amber-400/20",
-    Archived: "text-neutral-600 bg-neutral-100 border-neutral-200 dark:text-neutral-400 dark:bg-neutral-400/10 dark:border-neutral-400/20",
+    Abandoned: "text-purple-700 bg-purple-50 border-purple-200 dark:text-purple-400 dark:bg-purple-400/10 dark:border-purple-400/20",
 };
 
 const ProjectCard = ({ title, slug, description, tech, link, hasDetails, status, lastUpdated, isFallback, previewImages = [] }) => {

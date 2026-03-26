@@ -134,7 +134,7 @@ export const projects = [
         previewImages: [],
         hasDetails: false,
     },
-        {
+    {
         title: "Website 🥷",
         slug: "website",
         description: "Sourcecode for this website your on right now.",
@@ -146,6 +146,25 @@ export const projects = [
         lastUpdated: "26 March 2026",
         status: "In Progress",
         previewImages: [],
+        hasDetails: false,
+    },
+    {
+        title: "Adventure Story 🌋",
+        slug: "adventure-story",
+        description: "A choice-based story, fight enemies, explore biomes, get keys.",
+        tech: ["React", "TailWindCSS"],
+        type: "project",
+        link: "https://github.com/Uzy777/Mini-Projects/tree/main/React/adventure-story",
+        repo: "Uzy777/adventure-story",
+        path: "",
+        lastUpdated: "28 October 2025",
+        status: "Abandoned",
+        previewImages: [
+            "/content/projects/adventure-story/1.png",
+            "/content/projects/adventure-story/2.png",
+            "/content/projects/adventure-story/3.png",
+            "/content/projects/adventure-story/4.png",
+        ],
         hasDetails: false,
     },
 ];
