@@ -139,7 +139,7 @@ export const projects = [
         slug: "website",
         description: "Sourcecode for this website your on right now.",
         tech: ["React", "TailWindCSS", "Bash", "GitHub REST APIs"],
-        type: "course",
+        type: "project",
         link: "https://github.com/Uzy777/Uzy777.github.io",
         repo: "Uzy777/Uzy777.github.io",
         path: "",
