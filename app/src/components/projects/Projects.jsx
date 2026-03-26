@@ -54,10 +54,7 @@ const Projects = () => {
                             lastUpdated: formatCommitDate(commitDate),
                         };
                     } catch (error) {
-                        return {
-                            ...project,
-                            lastUpdated: "Unavailable",
-                        };
+                        return project;
                     }
                 }),
             );

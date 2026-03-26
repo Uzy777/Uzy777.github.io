@@ -134,4 +134,18 @@ export const projects = [
         previewImages: [],
         hasDetails: false,
     },
+        {
+        title: "Website 🥷",
+        slug: "website",
+        description: "Sourcecode for this website your on right now.",
+        tech: ["React", "TailWindCSS", "Bash", "GitHub REST APIs"],
+        type: "course",
+        link: "https://github.com/Uzy777/Uzy777.github.io",
+        repo: "Uzy777/Uzy777.github.io",
+        path: "",
+        lastUpdated: "26 March 2026",
+        status: "In Progress",
+        previewImages: [],
+        hasDetails: false,
+    },
 ];
