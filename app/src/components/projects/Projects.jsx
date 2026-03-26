@@ -1,18 +1,50 @@
 import { useEffect, useState } from "react";
 
 import ProjectCard from "./ProjectCard";
-import { projects } from "../../data/projects";
+import { projects as baseProjects } from "../../data/projects";
+import { getLastCommitDate, formatCommitDate } from "../../utils/github";
 
 const Projects = () => {
     const [filter, setFilter] = useState(() => localStorage.getItem("projectsFilter") || "all");
     const [visibleCount, setVisibleCount] = useState(6);
+    const [projectItems, setProjectItems] = useState(baseProjects);
 
-    const filteredProjects = filter === "all" ? projects : projects.filter((p) => p.type === filter);
+    const filteredProjects = filter === "all" ? projectItems : projectItems.filter((p) => p.type === filter);
     const visibleProjectsCount = Math.min(visibleCount, filteredProjects.length);
 
     useEffect(() => {
         localStorage.setItem("projectsFilter", filter);
     }, [filter]);
+
+    useEffect(() => {
+        const loadProjectDates = async () => {
+            const updatedProjects = await Promise.all(
+                baseProjects.map(async (project) => {
+                    if (!project.repo) {
+                        return project;
+                    }
+
+                    try {
+                        const commitDate = await getLastCommitDate(project.repo, project.path);
+
+                        return {
+                            ...project,
+                            lastUpdated: formatCommitDate(commitDate),
+                        };
+                    } catch (error) {
+                        return {
+                            ...project,
+                            lastUpdated: "Unavailable",
+                        };
+                    }
+                }),
+            );
+
+            setProjectItems(updatedProjects);
+        };
+
+        loadProjectDates();
+    }, []);
 
     return (
         <section id="projects" className="py-24 bg-white text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100 transition-colors">
@@ -42,7 +74,7 @@ const Projects = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {filteredProjects.slice(0, visibleCount).map((p) => (
-                        <ProjectCard key={p.title} {...p} />
+                        <ProjectCard key={p.slug || p.title} {...p} />
                     ))}
                 </div>
 
