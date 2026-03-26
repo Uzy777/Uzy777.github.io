@@ -6,8 +6,13 @@ const About = () => {
 
                 <div className="grid gap-12 md:grid-cols-2 items-center">
                     <div className="flex justify-center">
-                        <div className="relative w-48 h-64 rounded-full bg-neutral-200 dark:bg-neutral-800 overflow-hidden flex items-center justify-center">
-                            <img src="/Untitled.png"></img>
+                        <div className="relative w-48 h-64 rounded-full overflow-hidden group">
+                            <img src="/bio-pic-1.png" className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0" />
+   
+                            <img
+                                src="/bio-pic-2.png"
+                                className="w-full h-full object-cover absolute top-0 left-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                            />
                         </div>
                     </div>
 
