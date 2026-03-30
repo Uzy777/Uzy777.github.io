@@ -155,8 +155,8 @@ export const projects = [
         tech: ["React", "TailWindCSS"],
         type: "project",
         link: "https://github.com/Uzy777/Mini-Projects/tree/main/React/adventure-story",
-        repo: "Uzy777/adventure-story",
-        path: "",
+        repo: "Uzy777/Mini-Projects",
+        path: "React/adventure-story",
         lastUpdated: "28 October 2025",
         status: "Abandoned",
         previewImages: [
