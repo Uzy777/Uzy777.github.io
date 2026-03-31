@@ -8,7 +8,7 @@ const About = () => {
                     <div className="flex justify-center">
                         <div className="relative w-48 h-64 rounded-full overflow-hidden group">
                             <img src="/bio-pic-1.png" className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0" />
-   
+
                             <img
                                 src="/bio-pic-2.png"
                                 className="w-full h-full object-cover absolute top-0 left-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
@@ -34,7 +34,8 @@ const About = () => {
                                 <img src="/devicons/ubuntu-original.svg" alt="Ubuntu" className="w-7 h-7" title="Ubuntu" />
                                 {/* <img src="/devicons/debian-original.svg" alt="Debian" className="w-7 h-7" title="Debian" /> */}
                                 <img src="/devicons/vscodium-original.svg" alt="VSCodium" className="w-7 h-7" title="VSCodium" />
-                                <img src="/devicons/jira-original.svg" alt="Jira" className="w-7 h-7" title="Jira" />
+                                {/* <img src="/devicons/jira-original.svg" alt="Jira" className="w-7 h-7" title="Jira" /> */}
+                                <img src="/devicons/github-original.svg" alt="GitHub" className="w-7 h-7 invert" title="GitHub" />
                             </div>
                         </div>
                         <div className="pt-4 flex flex-wrap gap-4 text-sm">
