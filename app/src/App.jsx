@@ -15,6 +15,8 @@ import NotesIndex from "./pages/NotesIndex";
 import NotesTopic from "./pages/NotesTopic";
 import NotePage from "./pages/NotePage";
 
+import Certifications from "./components/sections/Certifications";
+
 export default function App() {
     const [theme, setTheme] = useState(() => localStorage.getItem("theme") || "dark");
 
@@ -35,6 +37,7 @@ export default function App() {
                                 <Hero />
                                 <About />
                                 <Experience />
+                                <Certifications />
                                 <Projects />
                                 {/* <NotesSection /> */}
                                 <Footer />
