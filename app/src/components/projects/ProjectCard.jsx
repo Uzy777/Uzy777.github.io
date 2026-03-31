@@ -19,6 +19,26 @@ const ProjectCard = ({ title, slug, description, tech, link, hasDetails, status,
         setImageIndex((prev) => (prev === 0 ? previewImages.length - 1 : prev - 1));
     };
 
+    function getDaysAgoLabel(dateString) {
+        if (!dateString) return null;
+
+        const date = new Date(dateString);
+        const now = new Date();
+
+        const diffMs = now - date;
+        const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+
+        if (diffDays < 0) return null;
+        if (diffDays > 90) return null;
+
+        if (diffDays === 0) return "(today)";
+        if (diffDays === 1) return "(1 day ago)";
+
+        return `(${diffDays} days ago)`;
+    }
+
+    const daysAgoLabel = getDaysAgoLabel(lastUpdated);
+
     return (
         <div
             onClick={() => setFlipped((prev) => !prev)}
@@ -46,9 +66,11 @@ const ProjectCard = ({ title, slug, description, tech, link, hasDetails, status,
                     {(status || lastUpdated) && (
                         <div className="flex items-center gap-3 text-xs">
                             {status && <span className={`px-2 py-0.5 rounded-full border ${statusStyles[status] || ""}`}>{status}</span>}
+
                             {lastUpdated && (
                                 <span className="opacity-60">
                                     Updated: {lastUpdated}
+                                    {daysAgoLabel && <span className="ml-2 text-xs italic opacity-70">{daysAgoLabel}</span>}
                                     {isFallback && <span className="ml-2 text-xs italic text-blue-600 dark:text-blue-400">(stale)</span>}
                                 </span>
                             )}
