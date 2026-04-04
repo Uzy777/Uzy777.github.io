@@ -55,16 +55,25 @@ const ProjectCard = ({ title, slug, description, tech, link, hasDetails, status,
 
                     <p className="text-sm opacity-80 leading-relaxed">{description}</p>
 
-                    <div className="flex flex-wrap gap-2 text-xs opacity-70">
+                    <div className="flex flex-wrap items-center gap-3 ">
                         {tech.map((item) => (
-                            <span key={item} className="px-2 py-1 rounded bg-black/5 dark:bg-white/10">
-                                {item}
-                            </span>
+                            <div
+                                key={item.name}
+                                className="flex items-center justify-center w-9 h-9 rounded-lg bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10"
+                                title={item.name}
+                            >
+                                <img
+                                    src={item.icon}
+                                    alt={item.name}
+                                    title={item.name}
+                                    className={`w-5 h-5 object-contain ${["Bash", "GitHub", "Flask"].includes(item.name) ? "dark:invert" : ""}`}
+                                />
+                            </div>
                         ))}
                     </div>
 
                     {(status || lastUpdated) && (
-                        <div className="flex items-center gap-3 text-xs">
+                        <div className="flex flex-wrap items-center gap-3 text-xs">
                             {status && <span className={`px-2 py-0.5 rounded-full border ${statusStyles[status] || ""}`}>{status}</span>}
 
                             {lastUpdated && (
