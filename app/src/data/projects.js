@@ -30,7 +30,12 @@ export const projects = [
         path: "Scripts/wallhaven-scraper",
         lastUpdated: "24 September 2025",
         status: "Completed",
-        previewImages: [],
+        previewImages: [
+            "/content/projects/wallhaven-scraper/1.png",
+            "/content/projects/wallhaven-scraper/2.png",
+            "/content/projects/wallhaven-scraper/3.png",
+            "/content/projects/wallhaven-scraper/4.png",
+        ],
         hasDetails: true,
     },
     {
