@@ -6,8 +6,6 @@ const certStatusStyles = {
     Planned: "text-blue-700 bg-blue-50 border-blue-200 dark:text-blue-400 dark:bg-blue-400/10 dark:border-blue-400/20",
 };
 
-const sortedCertifications = [...certifications].sort((a, b) => new Date(b.issued) - new Date(a.issued));
-
 const formatIssuedDate = (dateString) => {
     return new Date(dateString).toLocaleDateString("en-GB", {
         month: "short",
@@ -15,7 +13,7 @@ const formatIssuedDate = (dateString) => {
     });
 };
 
-// Lower = greater presedence
+// Lower = greater precedence
 const statusOrder = {
     "In Progress": 0,
     Planned: 1,
@@ -44,30 +42,41 @@ const Certifications = () => {
             </div>
 
             <div className="max-w-3xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                {sortedCertifications.map((cert, index) => (
-                    <div
-                        key={`${cert.title}-${index}`}
-                        className="flex flex-col items-center text-center gap-3 px-4 py-4 rounded-xl hover:bg-black/5 dark:hover:bg-white/5 transition"
-                    >
-                        <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10">
-                            <img
-                                src={cert.image}
-                                alt={`${cert.issuer} logo`}
-                                className="w-10 h-10 object-contain rounded-md bg-white p-1 dark:bg-neutral-100"
-                            />
-                        </div>
+                {sortedCertifications.map((cert, index) => {
+                    const isClickable = cert.status === "Completed" && cert.link;
 
-                        <div className="space-y-1">
-                            <p className="text-sm font-medium leading-tight">{cert.title}</p>
-                            <p className="text-xs opacity-50">{cert.issuer}</p>
-                            {cert.issued && <p className="text-[11px] opacity-40">Issued {formatIssuedDate(cert.issued)}</p>}
-                        </div>
+                    return (
+                        <div
+                            key={`${cert.title}-${index}`}
+                            className={`flex flex-col items-center text-center gap-3 px-4 py-4 rounded-xl transition ${
+                                isClickable ? "cursor-pointer hover:bg-black/5 dark:hover:bg-white/5 hover:-translate-y-0.5" : ""
+                            }`}
+                            onClick={() => {
+                                if (isClickable) {
+                                    window.open(cert.link, "_blank");
+                                }
+                            }}
+                        >
+                            <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10">
+                                <img
+                                    src={cert.image}
+                                    alt={`${cert.issuer} logo`}
+                                    className="w-10 h-10 object-contain rounded-md bg-white p-1 dark:bg-neutral-100"
+                                />
+                            </div>
 
-                        {cert.status && (
-                            <span className={`px-2 py-0.5 rounded-full border text-[11px] ${certStatusStyles[cert.status] || ""}`}>{cert.status}</span>
-                        )}
-                    </div>
-                ))}
+                            <div className="space-y-1">
+                                <p className="text-sm font-medium leading-tight">{cert.title}</p>
+                                <p className="text-xs opacity-50">{cert.issuer}</p>
+                                {cert.issued && <p className="text-[11px] opacity-40">Issued {formatIssuedDate(cert.issued)}</p>}
+                            </div>
+
+                            {cert.status && (
+                                <span className={`px-2 py-0.5 rounded-full border text-[11px] ${certStatusStyles[cert.status] || ""}`}>{cert.status}</span>
+                            )}
+                        </div>
+                    );
+                })}
             </div>
         </div>
     );
