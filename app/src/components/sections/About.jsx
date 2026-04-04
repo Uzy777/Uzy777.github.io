@@ -35,7 +35,7 @@ const About = () => {
                                 {/* <img src="/devicons/debian-original.svg" alt="Debian" className="w-7 h-7" title="Debian" /> */}
                                 <img src="/devicons/vscodium-original.svg" alt="VSCodium" className="w-7 h-7" title="VSCodium" />
                                 {/* <img src="/devicons/jira-original.svg" alt="Jira" className="w-7 h-7" title="Jira" /> */}
-                                <img src="/devicons/github-original.svg" alt="GitHub" className="w-7 h-7 invert" title="GitHub" />
+                                <img src="/devicons/github-original.svg" alt="GitHub" className="w-7 h-7 dark:invert" title="GitHub" />
                             </div>
                         </div>
                         <div className="pt-4 flex flex-wrap gap-4 text-sm">
