@@ -11,6 +11,8 @@ const ProjectCard = ({ title, slug, description, tech, link, hasDetails, status,
     const [flipped, setFlipped] = useState(false);
     const [imageIndex, setImageIndex] = useState(0);
 
+    const hasPreview = previewImages.length > 0;
+
     const nextImage = () => {
         setImageIndex((prev) => (prev === previewImages.length - 1 ? 0 : prev + 1));
     };
@@ -41,8 +43,14 @@ const ProjectCard = ({ title, slug, description, tech, link, hasDetails, status,
 
     return (
         <div
-            onClick={() => setFlipped((prev) => !prev)}
-            className="group cursor-pointer relative rounded-lg border border-black/10 dark:border-white/10 bg-white dark:bg-neutral-800 p-6 transition hover:-translate-y-0.5"
+            onClick={() => {
+                if (hasPreview) {
+                    setFlipped((prev) => !prev);
+                }
+            }}
+            className={`group relative rounded-lg border border-black/10 dark:border-white/10 bg-white dark:bg-neutral-800 p-6 transition ${
+                hasPreview ? "cursor-pointer hover:-translate-y-0.5" : "cursor-default"
+            }`}
         >
             <div className="relative">
                 {/* FRONT */}
@@ -104,7 +112,7 @@ const ProjectCard = ({ title, slug, description, tech, link, hasDetails, status,
                         </a>
                     </div>
 
-                    {previewImages.length > 0 && (
+                    {hasPreview && (
                         <div className="absolute bottom-1 right-4 text-xs opacity-0 group-hover:opacity-60 transition-opacity pointer-events-none">
                             Click to preview →
                         </div>
