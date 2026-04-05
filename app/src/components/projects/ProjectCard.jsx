@@ -119,10 +119,9 @@ const ProjectCard = ({ title, slug, description, tech, link, hasDetails, status,
                 >
                     {previewImages.length > 0 ? (
                         <>
-                            <div className="w-full h-40 overflow-hidden rounded-md ">
-                                <img src={previewImages[imageIndex]} alt={`${title}`} className="w-full h-full object-contain" />
+                            <div className="w-full h-40 rounded-md flex items-center justify-center bg-black/5 dark:bg-white/5">
+                                <img src={previewImages[imageIndex]} alt={title} className="max-h-full max-w-full object-contain" />
                             </div>
-
                             <div onClick={(e) => e.stopPropagation()} className="flex items-center justify-between text-sm">
                                 <button
                                     onClick={(e) => {

@@ -36,7 +36,7 @@ export const projects = [
         status: "Completed",
         previewImages: [
             "/content/projects/wallhaven-scraper/1.png",
-            "/content/projects/wallhaven-scraper/2.png",
+            // "/content/projects/wallhaven-scraper/2.png",
             "/content/projects/wallhaven-scraper/3.png",
             "/content/projects/wallhaven-scraper/4.png",
         ],
@@ -105,7 +105,7 @@ export const projects = [
             { name: "CSS", icon: "/devicons/css3-original.svg" },
             { name: "JavaScript", icon: "/devicons/javascript-original.svg" },
             { name: "React", icon: "/devicons/react-original.svg" },
-            { name: "TypeScript", icon: "/devicons/typescript-original.svg" },
+            // { name: "TypeScript", icon: "/devicons/typescript-original.svg" },
             { name: "Python", icon: "/devicons/python-original.svg" },
         ],
         type: "course",
@@ -213,6 +213,6 @@ export const projects = [
             "/content/projects/adventure-story/3.png",
             "/content/projects/adventure-story/4.png",
         ],
-        hasDetails: false,
+        hasDetails: true,
     },
 ];
