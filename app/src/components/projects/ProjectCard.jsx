@@ -74,7 +74,7 @@ const ProjectCard = ({ title, slug, description, tech, link, hasDetails, status,
                                     src={item.icon}
                                     alt={item.name}
                                     title={item.name}
-                                    className={`w-5 h-5 object-contain ${["Bash", "GitHub", "Flask"].includes(item.name) ? "dark:invert" : ""}`}
+                                    className={`w-5 h-5 object-contain ${["Bash", "GitHub", "Flask", "YAML"].includes(item.name) ? "dark:invert" : ""}`}
                                 />
                             </div>
                         ))}

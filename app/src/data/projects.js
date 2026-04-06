@@ -215,4 +215,23 @@ export const projects = [
         ],
         hasDetails: true,
     },
+    {
+        title: "CV Generator 📄",
+        slug: "cv-generator",
+        description: "Generate a CV using YAML.",
+        tech: [
+            { name: "YAML", icon: "/devicons/yaml-plain.svg" },
+            { name: "HTML", icon: "/devicons/html5-original.svg" },
+            { name: "CSS", icon: "/devicons/css3-original.svg" },
+            { name: "JavaScript", icon: "/devicons/javascript-original.svg" },
+        ],
+        type: "project",
+        link: "https://github.com/Uzy777/Mini-Projects/tree/main/Scripts/cv-generator",
+        repo: "Uzy777/Mini-Projects",
+        path: "Scripts/cv-generator",
+        lastUpdated: "06 April 2026",
+        status: "In Progress",
+        previewImages: [],
+        hasDetails: false,
+    },
 ];
