@@ -14,17 +14,23 @@ const Experience = () => {
                         />
                         <div className="space-y-3">
                             <h4 className="text-xl font-medium">Application Developer</h4>
-
                             <p className="text-sm opacity-75">Tokio Marine · Contract · 📍 Bridgend, Wales, United Kingdom · Hybrid</p>
-
                             <p className="text-xs opacity-60">Jan 2024 — Present</p>
-
-                            <p className="text-sm leading-relaxed">TBA</p>
+                            <li className="text-sm leading-relaxed">
+                                Enhanced the existing UI/UX of projects based on Pega Platform (React), taking ownership and sharing knowledge with other teams.
+                            </li>
+                            <li className="text-sm leading-relaxed">
+                                Bringing change with a Python script integrating and creating REST APIs to help automate tedious daily monitoring tasks with a
+                                single consolidated report sent via email.
+                            </li>
+                            <li className="text-sm leading-relaxed">
+                                Collaboration with various stakeholders, bringing fresh ideas and solutions to the wider project teams.
+                            </li>
 
                             <div className="flex flex-wrap gap-2 text-xs">
-                                <span className="px-2 py-1 rounded bg-black/5 dark:bg-white/10">Pega (CRM)</span>
-                                <span className="px-2 py-1 rounded bg-black/5 dark:bg-white/10">React</span>
-                                <span className="px-2 py-1 rounded bg-black/5 dark:bg-white/10">Front-End</span>
+                                <span className="px-2 py-1 rounded bg-black/5 dark:bg-white/10">Pega Platform (React)</span>
+                                <span className="px-2 py-1 rounded bg-black/5 dark:bg-white/10">UI/UX</span>
+                                <span className="px-2 py-1 rounded bg-black/5 dark:bg-white/10">Python</span>
                                 <span className="px-2 py-1 rounded bg-black/5 dark:bg-white/10">Azure</span>
                             </div>
                         </div>
