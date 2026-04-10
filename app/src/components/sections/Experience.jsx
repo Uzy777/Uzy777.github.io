@@ -76,13 +76,20 @@ const Experience = () => {
 
                             <p className="text-xs opacity-60">Oct 2024 — Oct 2025</p>
 
-                            <p className="text-sm leading-relaxed">TBA</p>
-
+                            <li className="text-sm leading-relaxed">
+                                Polished elements of the frontend design ensuring compatibility across Android and IOS devices using React Native.
+                            </li>
+                            <li className="text-sm leading-relaxed">
+                                Worked closly with the team to dicuss approaches and issues in relation to the application, through meetings and standups.
+                            </li>
+                            <li className="text-sm leading-relaxed">
+                                Commited and created several pull requests utilsiing Git, successuflly completed and audited code reviews for other developers.
+                            </li>
                             <div className="flex flex-wrap gap-2 text-xs">
-                                <span className="px-2 py-1 rounded bg-black/5 dark:bg-white/10">React</span>
-                                <span className="px-2 py-1 rounded bg-black/5 dark:bg-white/10">Python</span>
-                                <span className="px-2 py-1 rounded bg-black/5 dark:bg-white/10">Git</span>
+                                <span className="px-2 py-1 rounded bg-black/5 dark:bg-white/10">React Native</span>
                                 <span className="px-2 py-1 rounded bg-black/5 dark:bg-white/10">Expo</span>
+                                <span className="px-2 py-1 rounded bg-black/5 dark:bg-white/10">Python</span>
+                                <span className="px-2 py-1 rounded bg-black/5 dark:bg-white/10">Jira</span>
                             </div>
                         </div>
                     </div>
