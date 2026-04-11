@@ -12,6 +12,10 @@ echo "🚀 Building React app..."
 
 cd app
 npm run build
+
+echo "📄 Creating SPA fallback 404.html..."
+cp dist/index.html dist/404.html
+
 cd ..
 
 echo "🧹 Cleaning old build files..."

@@ -6,6 +6,7 @@ import Projects from "./components/projects/Projects";
 import Footer from "./components/layout/Footer";
 import ThemeToggle from "./components/layout/ThemeToggle";
 import ProjectPage from "./pages/ProjectPage";
+import NotFound from "./pages/NotFound";
 
 import NotesSection from "./components/notes/NotesSection";
 
@@ -50,6 +51,8 @@ export default function App() {
                     <Route path="/notes" element={<NotesIndex />} />
                     <Route path="/notes/:topic" element={<NotesTopic />} />
                     <Route path="/notes/:topic/:slug" element={<NotePage />} />
+
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
             </div>
         </div>
