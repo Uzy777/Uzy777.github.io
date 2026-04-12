@@ -231,7 +231,10 @@ export const projects = [
         path: "Scripts/cv-generator",
         lastUpdated: "06 April 2026",
         status: "In Progress",
-        previewImages: [],
-        hasDetails: false,
+        previewImages: [
+            "/content/projects/cv-generator/2.png",
+            "/content/projects/cv-generator/3.png"
+        ],
+        hasDetails: true,
     },
 ];
