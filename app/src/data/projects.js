@@ -26,7 +26,8 @@ export const projects = [
     {
         title: "Wallhaven Scraper 🖼️",
         slug: "wallhaven-scraper",
-        description: "A Python script to easily download wallpapers from wallhaven. Fetch wallpapers using Latest, Toplist, Random, or perform a manual search with full control over keywords, purity, sorting, and resolution.",
+        description:
+            "A Python script to easily download wallpapers from wallhaven. Fetch wallpapers using Latest, Toplist, Random, or perform a manual search with full control over keywords, purity, sorting, and resolution.",
         tech: [{ name: "Python", icon: "/devicons/python-original.svg" }],
         type: "project",
         link: "https://github.com/Uzy777/Mini-Projects/tree/main/Scripts/wallhaven-scraper",
@@ -173,9 +174,9 @@ export const projects = [
         hasDetails: false,
     },
     {
-        title: "Website 🥷",
-        slug: "website",
-        description: "Sourcecode for this website your on right now.",
+        title: "Personal Portfolio Website 🥷",
+        slug: "personal-portfolio-website",
+        description: "A modern, responsive personal portfolio built with React to showcase my projects, experience, and learning journey.",
         tech: [
             { name: "React", icon: "/devicons/react-original.svg" },
             { name: "Tailwind CSS", icon: "/devicons/tailwindcss-original.svg" },
@@ -189,13 +190,20 @@ export const projects = [
         path: "",
         lastUpdated: "26 March 2026",
         status: "In Progress",
-        previewImages: [],
-        hasDetails: false,
+        previewImages: [
+            "/content/projects/personal-portfolio-website/1.png",
+            "/content/projects/personal-portfolio-website/2.png",
+            "/content/projects/personal-portfolio-website/3.png",
+            "/content/projects/personal-portfolio-website/4.png",
+            "/content/projects/personal-portfolio-website/5.png",
+        ],
+        hasDetails: true,
     },
     {
         title: "Adventure Story 🌋",
         slug: "adventure-story",
-        description: "A React-based choice-driven adventure game where players explore different paths, encounter enemies, and progress through a branching storyline.",
+        description:
+            "A React-based choice-driven adventure game where players explore different paths, encounter enemies, and progress through a branching storyline.",
         tech: [
             { name: "React", icon: "/devicons/react-original.svg" },
             { name: "Tailwind CSS", icon: "/devicons/tailwindcss-original.svg" },
@@ -231,10 +239,7 @@ export const projects = [
         path: "Scripts/cv-generator",
         lastUpdated: "06 April 2026",
         status: "In Progress",
-        previewImages: [
-            "/content/projects/cv-generator/2.png",
-            "/content/projects/cv-generator/3.png"
-        ],
+        previewImages: ["/content/projects/cv-generator/2.png", "/content/projects/cv-generator/3.png"],
         hasDetails: true,
     },
 ];
