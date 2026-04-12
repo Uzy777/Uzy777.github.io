@@ -26,7 +26,7 @@ export const projects = [
     {
         title: "Wallhaven Scraper 🖼️",
         slug: "wallhaven-scraper",
-        description: "Get a list of wallpapers downloaded.",
+        description: "A Python script to easily download wallpapers from wallhaven. Fetch wallpapers using Latest, Toplist, Random, or perform a manual search with full control over keywords, purity, sorting, and resolution.",
         tech: [{ name: "Python", icon: "/devicons/python-original.svg" }],
         type: "project",
         link: "https://github.com/Uzy777/Mini-Projects/tree/main/Scripts/wallhaven-scraper",
@@ -195,7 +195,7 @@ export const projects = [
     {
         title: "Adventure Story 🌋",
         slug: "adventure-story",
-        description: "A choice-based story, fight enemies, explore biomes, get keys.",
+        description: "A React-based choice-driven adventure game where players explore different paths, encounter enemies, and progress through a branching storyline.",
         tech: [
             { name: "React", icon: "/devicons/react-original.svg" },
             { name: "Tailwind CSS", icon: "/devicons/tailwindcss-original.svg" },
@@ -218,7 +218,7 @@ export const projects = [
     {
         title: "CV Generator 📄",
         slug: "cv-generator",
-        description: "Generate a CV using YAML.",
+        description: "A simple YAML-driven resume generator that creates a styled HTML preview and exports it to PDF.",
         tech: [
             { name: "YAML", icon: "/devicons/yaml-plain.svg" },
             { name: "HTML", icon: "/devicons/html5-original.svg" },
