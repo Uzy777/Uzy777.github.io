@@ -49,16 +49,21 @@ const Experience = () => {
 
                             <p className="text-xs opacity-60">Aug 2024 — Present</p>
 
-                            <p className="text-sm leading-relaxed">
-                                Actively working through projects and learning resources focused on full-stack development, documenting progress and experiments
-                                through GitHub repositories.
-                            </p>
+                            <li className="text-sm leading-relaxed">
+                                Worked through several online courses and books relating to full stack development, Python, Computer Science.
+                            </li>
+                            <li className="text-sm leading-relaxed">
+                                Have actively been involved working on personal mini projects using technologies such as React, Python, Bash.
+                            </li>
+                            <li className="text-sm leading-relaxed">
+                                Documenting journey and work through GitHub repositories ensuring to include polished and thoughtful README's.
+                            </li>
 
                             <div className="flex flex-wrap gap-2 text-xs">
                                 <span className="px-2 py-1 rounded bg-black/5 dark:bg-white/10">React</span>
                                 <span className="px-2 py-1 rounded bg-black/5 dark:bg-white/10">Python</span>
-                                <span className="px-2 py-1 rounded bg-black/5 dark:bg-white/10">Git</span>
-                                <span className="px-2 py-1 rounded bg-black/5 dark:bg-white/10">Full-Stack</span>
+                                <span className="px-2 py-1 rounded bg-black/5 dark:bg-white/10">Bash</span>
+                                <span className="px-2 py-1 rounded bg-black/5 dark:bg-white/10">Docker</span>
                             </div>
                         </div>
                     </div>

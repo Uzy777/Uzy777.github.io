@@ -19,14 +19,16 @@ const About = () => {
                     <div className="space-y-6 text-neutral-700 dark:text-neutral-300 bg-neutral-100 dark:bg-neutral-800/40 rounded-lg p-6">
                         {" "}
                         <p className="leading-relaxed">
-                            I'm a junior software developer focused on learning and building modern web applications, with a growing interest in full-stack
-                            development.
+                            Junior engineer specialising in React and frontend development, with experience building full-stack applications and a background in
+                            computer networks and IT architecture.
                         </p>
                         <p className="leading-relaxed">
-                            I enjoy learning through hands-on projects and courses, mainly working with React while exploring Python and related frameworks.
+                            I enjoy creating clean, responsive interfaces and turning ideas into practical, working applications. I’m currently focused on
+                            improving my full-stack skills through projects, experimenting with new technologies, and continuously refining both my code and
+                            design approach.
                         </p>
-                        <p className="leading-relaxed">Outside of coding, I enjoy cars, driving, and ricing my Arch + Hyprland environment.</p>
-                        <div className="pt-6 space-y-3">
+                        {/* <p className="leading-relaxed">Outside of coding, I enjoy cars, driving, and ricing my Arch + Hyprland environment.</p> */}
+                        <div className="pt-3 space-y-3">
                             <p className="text-sm font-medium opacity-70">Daily environment & tools</p>
 
                             <div className="flex flex-wrap gap-4">
