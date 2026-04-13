@@ -80,10 +80,10 @@ const Experience = () => {
                                 Polished elements of the frontend design ensuring compatibility across Android and IOS devices using React Native.
                             </li>
                             <li className="text-sm leading-relaxed">
-                                Worked closly with the team to dicuss approaches and issues in relation to the application, through meetings and standups.
+                                Worked closely with the team to discuss approaches and issues in relation to the application, through meetings and stand ups.
                             </li>
                             <li className="text-sm leading-relaxed">
-                                Commited and created several pull requests utilsiing Git, successuflly completed and audited code reviews for other developers.
+                                Committed and created several pull requests utilising Git, successfully completed and audited code reviews for other developers.
                             </li>
                             <div className="flex flex-wrap gap-2 text-xs">
                                 <span className="px-2 py-1 rounded bg-black/5 dark:bg-white/10">React Native</span>
