@@ -41,6 +41,8 @@ const ProjectCard = ({ title, slug, description, tech, link, hasDetails, status,
 
     const daysAgoLabel = getDaysAgoLabel(lastUpdated);
 
+    const showUpdated = lastUpdated && status !== "Completed" && status !== "Abandoned";
+
     return (
         <div
             onClick={() => {

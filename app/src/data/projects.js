@@ -238,7 +238,7 @@ export const projects = [
         repo: "Uzy777/Mini-Projects",
         path: "Scripts/cv-generator",
         lastUpdated: "06 April 2026",
-        status: "In Progress",
+        status: "Completed",
         previewImages: ["/content/projects/cv-generator/2.png", "/content/projects/cv-generator/3.png"],
         hasDetails: true,
     },
