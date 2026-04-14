@@ -23,6 +23,17 @@ const ProjectPage = () => {
                 </Link>
 
                 <div className="flex flex-wrap items-center gap-3">
+                    {project?.demo && (
+                        <a
+                            href={project.demo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center rounded-lg px-4 py-2 text-sm font-medium bg-emerald-600 text-white hover:bg-emerald-700 transition"
+                        >
+                            Live Demo
+                        </a>
+                    )}
+
                     {project?.link && (
                         <a
                             href={project.link}
@@ -30,7 +41,7 @@ const ProjectPage = () => {
                             rel="noopener noreferrer"
                             className="inline-flex items-center rounded-lg px-4 py-2 text-sm font-medium bg-black text-white hover:bg-neutral-800 transition dark:bg-white dark:text-black dark:hover:bg-neutral-200"
                         >
-                            View source
+                            View Source
                         </a>
                     )}
                 </div>
