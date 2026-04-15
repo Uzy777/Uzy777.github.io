@@ -1,13 +1,18 @@
+import { useState } from "react";
 import { experiences } from "../../data/experiences";
 
 const Experience = () => {
+    const [showAll, setShowAll] = useState(false);
+
+    const visibleExperiences = showAll ? experiences : experiences.slice(0, 3);
+
     return (
         <section className="py-28 bg-neutral-200 text-neutral-900 dark:bg-black dark:text-neutral-100 transition-colors">
             <div className="max-w-6xl mx-auto px-6 space-y-24">
                 <h2 className="text-3xl font-semibold text-center ">Experience</h2>
 
                 <div className="space-y-16 border-l-2 border-black/20 dark:border-white/20 pl-10">
-                    {experiences.map((experience) => (
+                    {visibleExperiences.map((experience) => (
                         <div key={`${experience.role}-${experience.company}`}>
                             <div className="relative flex gap-6 bg-white/60 dark:bg-neutral-900/60 rounded-xl p-6 hover:bg-white dark:hover:bg-neutral-900 transition">
                                 <img
@@ -41,6 +46,13 @@ const Experience = () => {
                         </div>
                     ))}
                 </div>
+                {experiences.length > 3 && !showAll && (
+                    <div className="text-center">
+                        <button onClick={() => setShowAll(true)} className="text-sm underline opacity-70 hover:opacity-100">
+                            Show more
+                        </button>
+                    </div>
+                )}
             </div>
         </section>
     );
