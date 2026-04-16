@@ -47,7 +47,7 @@ export const projects = [
     {
         title: "Pig Dice Game 🐷",
         slug: "pig-dice-game",
-        description: "A two-player game where players take turns rolling, banking points, and racing to reach the selected target score first.",
+        description: "A two player game where players take turns rolling, banking points, and racing to reach the selected target score first.",
         tech: [
             { name: "React", icon: "/devicons/react-original.svg" },
             { name: "Tailwind CSS", icon: "/devicons/tailwindcss-original.svg" },
@@ -232,7 +232,7 @@ export const projects = [
     {
         title: "CV Generator 📄",
         slug: "cv-generator",
-        description: "A simple YAML-driven resume generator that creates a styled HTML preview and exports it to PDF.",
+        description: "A simple YAML driven resume generator that creates a styled HTML preview and exports it to PDF.",
         tech: [
             { name: "YAML", icon: "/devicons/yaml-plain.svg" },
             { name: "HTML", icon: "/devicons/html5-original.svg" },

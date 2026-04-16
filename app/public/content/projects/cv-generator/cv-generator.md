@@ -1,6 +1,6 @@
 # CV Generator
 
-A simple YAML-driven resume generator that creates a styled HTML preview and exports it to PDF.
+A simple YAML driven resume generator that creates a styled HTML preview and exports it to PDF.
 
 ---
 

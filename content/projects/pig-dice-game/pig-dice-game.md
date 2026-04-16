@@ -1,6 +1,6 @@
 # 🐷 Pig Dice Game
 
-A two-player game where players take turns rolling, banking points, and racing to reach the selected target score first.
+A two player game where players take turns rolling, banking points, and racing to reach the selected target score first.
 
 ---
 
