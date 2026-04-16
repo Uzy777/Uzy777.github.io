@@ -46,7 +46,7 @@ export const certifications = [
     {
         title: "AWS Cloud Practitioner",
         issuer: "AWS Amazon",
-        status: "Planned",
+        status: "In Progress",
         issued: "",
         image: "/content/certifications/amazon-web-services.jpeg",
         link: "",
