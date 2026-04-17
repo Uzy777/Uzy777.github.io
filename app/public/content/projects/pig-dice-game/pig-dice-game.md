@@ -91,6 +91,9 @@ That reset made the app easier to understand, easier to style, and a better base
 
 ## 🎥 Preview
 
-_Add screenshots here once available._
+![Preview 1](/content/projects/pig-dice-game/1.png)
+![Preview 2](/content/projects/pig-dice-game/2.png)
+![Preview 3](/content/projects/pig-dice-game/3.png)
+![Preview 4](/content/projects/pig-dice-game/4.png)
 
 ---
