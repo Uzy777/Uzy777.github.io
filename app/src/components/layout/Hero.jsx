@@ -14,21 +14,44 @@ const Hero = () => {
 
                 <h2 className="text-2xl font-medium mb-4 opacity-80">Junior Software Engineer</h2>
 
-                <div className="relative h-10 flex items-center justify-center" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
-                    {/* Text */}
+                <div
+                    className="relative h-10 flex items-center justify-center"
+                    onMouseEnter={() => setHovered(true)}
+                    onMouseLeave={() => setHovered(false)}
+                >
                     <p className={`transition-opacity duration-300 ${hovered ? "opacity-0" : "opacity-70"}`}>I build things with …</p>
 
-                    {/* Icons */}
                     <div className={`absolute flex items-center justify-center gap-4 transition-opacity duration-300 ${hovered ? "opacity-100" : "opacity-0"}`}>
                         <img src="/devicons/react-original.svg" alt="React" className="w-8 h-8" />
                         <img src="/devicons/python-original.svg" alt="Python" className="w-8 h-8" />
                         <img src="/devicons/javascript-original.svg" alt="JavaScript" className="w-8 h-8" />
                         <img src="/devicons/vitejs-original.svg" alt="Vite" className="w-8 h-8" />
-                        {/* <img src="/devicons/bash-original.svg" alt="Bash" className="w-8 h-8" /> */}
                         <img src="/devicons/html5-original.svg" alt="HTML" className="w-8 h-8" />
                         <img src="/devicons/css3-original.svg" alt="CSS" className="w-8 h-8" />
                         <img src="/devicons/tailwindcss-original.svg" alt="Tailwind" className="w-8 h-8" />
                     </div>
+                </div>
+
+                <div className="flex items-center gap-6 mt-4">
+                    <a
+                        href="https://github.com/Uzy777"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 opacity-70 hover:opacity-100 transition"
+                    >
+                        <img src="/devicons/github-original.svg" alt="GitHub" className="w-5 h-5 invert" />
+                        GitHub
+                    </a>
+
+                    <a
+                        href="https://linkedin.com/in/usmon-h"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 opacity-70 hover:opacity-100 transition"
+                    >
+                        <img src="/devicons/linkedin-plain.svg" alt="LinkedIn" className="w-5 h-5 invert" />
+                        LinkedIn
+                    </a>
                 </div>
             </div>
 
