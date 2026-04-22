@@ -16,7 +16,7 @@ const Footer = () => {
                         GitHub
                     </a>
                     <a
-                        href="https://www.linkedin.com/in/usmon-h"
+                        href="https://linkedin.com/in/usmon-h"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 opacity-80 hover:opacity-100"
