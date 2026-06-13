@@ -46,10 +46,10 @@ export const certifications = [
     {
         title: "AWS Cloud Practitioner",
         issuer: "AWS Amazon",
-        status: "In Progress",
-        issued: "",
+        status: "Completed",
+        issued: "2026-06",
         image: "/content/certifications/amazon-web-services.jpeg",
-        link: "",
+        link: "/content/certifications/AWS-Certified-Cloud-Practitioner-certificate.pdf",
     },
     {
         title: "Microsoft Azure Fundamentals",
@@ -60,11 +60,11 @@ export const certifications = [
         link: "",
     },
     {
-        title: "CompTIA A+",
-        issuer: "CompTIA",
+        title: "AWS Solutions Architect",
+        issuer: "AWS",
         status: "Planned",
         issued: "",
-        image: "/content/certifications/comptia.jpeg",
+        image: "/content/certifications/amazon-web-services.jpeg",
         link: "",
     },
     {
