@@ -248,4 +248,23 @@ export const projects = [
         previewImages: ["/content/projects/cv-generator/2.png", "/content/projects/cv-generator/3.png"],
         hasDetails: true,
     },
+    {
+        title: "Wallpaper Dashboard 🖼️",
+        slug: "wallpaper-dashboard",
+        description: "A collection of wallpapers ready to download.",
+        tech: [
+            { name: "React", icon: "/devicons/react-original.svg" },
+            { name: "TypeScript", icon: "/devicons/typescript-original.svg" },
+            { name: "Tailwind CSS", icon: "/devicons/tailwindcss-original.svg" },
+            { name: "JavaScript", icon: "/devicons/javascript-original.svg" },
+        ],
+        type: "project",
+        link: "https://github.com/Uzy777/Mini-Projects/tree/main/React/wallpaper-dashboard",
+        repo: "Uzy777/Mini-Projects",
+        path: "React/wallpaper-dashboard",
+        lastUpdated: "15 June 2026",
+        status: "In Progress",
+        previewImages: [],
+        hasDetails: false,
+    },
 ];

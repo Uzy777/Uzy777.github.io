@@ -61,18 +61,18 @@ export const certifications = [
     },
     {
         title: "AWS Solutions Architect",
-        issuer: "AWS",
+        issuer: "AWS Amazon",
         status: "Planned",
         issued: "",
         image: "/content/certifications/amazon-web-services.jpeg",
         link: "",
     },
     {
-        title: "CompTIA Linux+",
-        issuer: "CompTIA",
+        title: "AWS AI Practitioner",
+        issuer: "AWS Amazon",
         status: "Planned",
         issued: "",
-        image: "/content/certifications/comptia.jpeg",
+        image: "/content/certifications/amazon-web-services.jpeg",
         link: "",
     },
 ];
