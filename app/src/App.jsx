@@ -7,6 +7,7 @@ import Footer from "./components/layout/Footer";
 import ThemeToggle from "./components/layout/ThemeToggle";
 import ProjectPage from "./pages/ProjectPage";
 import NotFound from "./pages/NotFound";
+import LiveProjects from "./components/projects/LiveProjects";
 
 import NotesSection from "./components/notes/NotesSection";
 
@@ -39,6 +40,7 @@ export default function App() {
                                 <About />
                                 <Experience />
                                 <Certifications />
+                                <LiveProjects />
                                 <Projects />
                                 {/* <NotesSection /> */}
                                 <Footer />

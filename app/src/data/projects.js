@@ -23,6 +23,7 @@ export const projects = [
             "/content/projects/country-explorer/5.png",
         ],
         hasDetails: true,
+        featuredDemo: true,
     },
     {
         title: "Wallhaven Scraper 🖼️",
@@ -67,6 +68,7 @@ export const projects = [
             "/content/projects/pig-dice-game/4.png",
         ],
         hasDetails: true,
+        featuredDemo: true,
     },
     {
         title: "The Farmer Was Replaced 🌾",
@@ -260,11 +262,13 @@ export const projects = [
         ],
         type: "project",
         link: "https://github.com/Uzy777/Mini-Projects/tree/main/React/wallpaper-dashboard",
+        demo: "https://wallpaper-dashboard.uzy777.dev",
         repo: "Uzy777/Mini-Projects",
         path: "React/wallpaper-dashboard",
         lastUpdated: "15 June 2026",
         status: "In Progress",
         previewImages: [],
         hasDetails: false,
+        featuredDemo: true,
     },
 ];

@@ -30,7 +30,7 @@ const ProjectPage = () => {
                             rel="noopener noreferrer"
                             className="inline-flex items-center rounded-lg px-4 py-2 text-sm font-medium bg-emerald-600 text-white hover:bg-emerald-700 transition"
                         >
-                            Live Demo
+                            Demo
                         </a>
                     )}
 
